@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Online - Portofolio Style</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">TokoKu</div>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> <!-- Ikon garis tiga -->
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to TokoKu</h1>
+            <p>Your one-stop shop for the best products</p>
+            <a href="#products" class="cta-button">Explore Products</a>
+        </div>
+        <div class="hero-animation">
+            <img src="https://cdn-icons-png.flaticon.com/512/3737/3737722.png" alt="Cart" class="cart">
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>Description of product 1.</p>
+                <button class="order-button" onclick="orderViaWhatsApp('Product 1')">Order via WhatsApp</button>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>Description of product 2.</p>
+                <button class="order-button" onclick="orderViaWhatsApp('Product 2')">Order via WhatsApp</button>
+            </div>
+            <!-- Tambahkan lebih banyak product card di sini -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We are a dedicated team providing the best products for you.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@tokoku.com</p>
+        <p>Phone: +123 456 7890</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 TokoKu. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+        <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+</body>
+</html>
